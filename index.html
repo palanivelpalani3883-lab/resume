@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Resume Screening System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Resume Screening System</h1>
+<p class="subtitle">Enter your details and check job eligibility</p>
+
+<label>Full Name</label>
+<input type="text" id="name">
+
+<label>Email</label>
+<input type="email" id="email">
+
+<label>Qualification</label>
+<input type="text" id="qualification">
+
+<label>CGPA</label>
+<input type="number" id="cgpa" step="0.1" min="0" max="10">
+
+<label>Experience (Years)</label>
+<input type="number" id="experience">
+
+<label>Skills (Comma Separated)</label>
+<textarea id="skills" rows="5"
+placeholder=" "></textarea>
+
+<button onclick="checkResume()">
+Check Eligibility
+</button>
+
+<div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
